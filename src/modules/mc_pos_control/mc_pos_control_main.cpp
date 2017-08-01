@@ -1422,7 +1422,6 @@ void MulticopterPositionControl::control_auto(float dt)
 		    && (_pos_sp_triplet.current.type == position_setpoint_s::SETPOINT_TYPE_POSITION  ||
 			_pos_sp_triplet.current.type == position_setpoint_s::SETPOINT_TYPE_LOITER ||
 			_pos_sp_triplet.current.type == position_setpoint_s::SETPOINT_TYPE_FOLLOW_TARGET)) {
-
 			math::Vector<3> scale = _params.pos_p.edivide(cruising_speed);
 
 			/* convert current setpoint to scaled space */
